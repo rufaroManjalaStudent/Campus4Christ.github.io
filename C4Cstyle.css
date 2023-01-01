@@ -107,6 +107,7 @@ nav .fa-solid{
         right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
     .nav-links ul li::after{
         content: '';
@@ -131,4 +132,14 @@ nav .fa-solid{
     .nav-links ul{
         padding: 30px;
     }
+}
+
+
+/* ----course styling----- */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
 }
