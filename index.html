@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
 
+    <!--Font Awesome Bootstrap import: This is for using the icons--> <!--FIXME: Icons for the small screen menu not showing -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
     <title>HOME PAGE (developing)</title> <!--TODO: Change the title to something suitable-->
 </head>
 
@@ -20,18 +23,36 @@
     <section class="header">
         <nav>
             <a href ="index.html"><img src="images/logo"></a> <!--TODO: Need to create and add a logo-->
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li> <a href="">HOME</a></li>
                     <li> <a href="">EVENTS</a></li>
                     <li> <a href="">CONTACT US</a></li>
                     <li> <a href="">ABOUT</a></li>
                 </ul>
-            
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        
+    <dix class="text-box">
+        <h1>THE PLACE FOR ON-CAMPUS CHRISTIANS OF AUCKLAND!</h1>
+        <p>This site is for those who aren't afraid to read textbooks and the BIBLE!</p>
+        <a href="" class="hero-btn">Find us on Auckland Campuses</a>
 
+
+    </dix>
     </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "200";
+    }
+
+</script>
 </body>
 </html>
